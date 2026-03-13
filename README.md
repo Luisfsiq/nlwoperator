@@ -12,7 +12,7 @@ Este ecossistema foi projetado para demonstrar implementações práticas de mod
 
 | Notebook | Tecnologia | Descrição |
 | :--- | :--- | :--- |
-| `gemini_vision.ipynb` | **Google Gemini 1.5 Flash** | Extração de dados estruturados de imagens usando AI Multimodal. |
+| `gemini_vision.ipynb` | **Google Gemini 2.5 Flash** | Extração de dados estruturados de imagens usando AI Multimodal. |
 | `yolos_detection.ipynb` | **Hugging Face (YOLOS)** | Detecção de objetos baseada em Transformers (Object Detection). |
 | `clipseg_segmentation.ipynb` | **Hugging Face (CLIPSeg)** | Segmentação de imagens via texto (Zero-Shot Segmentation). |
 | `mobilenet_classification.ipynb`| **MobileNetV3 (timm)** | Classificação ultra-rápida e eficiente de imagens. |
