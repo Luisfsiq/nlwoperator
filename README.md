@@ -1,81 +1,94 @@
-# NLW Operator - Inteligência Artificial Visionária 🚀
+# 🤖 NLW Operator - Computer Vision & AI Hub 🚀
 
-Este repositório contém uma coleção de notebooks interativos demonstrando as capacidades mais modernas de Visão Computacional e IA Generativa, utilizando o Google Gemini, PyTorch e Hugging Face.
-
-## 📋 Conteúdo do Projeto
-
-O projeto está dividido em notebooks especializados:
-
-1.  **`gemini_vision.ipynb`**: Análise de imagens com o Google Gemini 1.5 Flash usando **Output Estruturado** (Pydantic).
-2.  **`mobilenet_classification.ipynb`**: Classificação de imagens (Top-5) usando a arquitetura eficiente **MobileNetV3** (via biblioteca `timm`).
-3.  **`yolos_detection.ipynb`**: Detecção de objetos em tempo real usando **YOLOS** (You Only Look at One Sequence) baseado em Transformers.
-4.  **`clipseg_segmentation.ipynb`**: Segmentação de imagens **Zero-shot** usando linguagem natural (texto para máscara).
+Bem-vindo ao **NLW Operator Vision**, um repositório dedicado à exploração de fronteiras em Visão Computacional e Inteligência Artificial Generativa. Este projeto reúne as ferramentas mais potentes da atualidade para análise, detecção e segmentação de imagens.
 
 ---
 
-## 💻 Requisitos e Instalação
+## 🎨 Visão Geral do Projeto
 
-Este projeto utiliza o gerenciador de pacotes moderno **`uv`** para garantir velocidade e reprodutibilidade.
+Este ecossistema foi projetado para demonstrar implementações práticas de modelos de Deep Learning e LLMs Multimodais. Utilizamos frameworks líderes como **Google Gemini**, **PyTorch**, **Hugging Face** e **MediaPipe**.
 
-### 1. Pré-requisitos
-*   **Python 3.10 ou superior** installed.
-*   **Git** instalado.
-*   **Google Gemini API Key**: [Obtenha aqui](https://aistudio.google.com/app/apikey).
+### 🧪 Notebooks Disponíveis
 
-### 2. Clonando o Repositório
+| Notebook | Tecnologia | Descrição |
+| :--- | :--- | :--- |
+| `gemini_vision.ipynb` | **Google Gemini 1.5 Flash** | Extração de dados estruturados de imagens usando AI Multimodal. |
+| `yolos_detection.ipynb` | **Hugging Face (YOLOS)** | Detecção de objetos baseada em Transformers (Object Detection). |
+| `clipseg_segmentation.ipynb` | **Hugging Face (CLIPSeg)** | Segmentação de imagens via texto (Zero-Shot Segmentation). |
+| `mobilenet_classification.ipynb`| **MobileNetV3 (timm)** | Classificação ultra-rápida e eficiente de imagens. |
+| `mediapipe_object_detection.ipynb`| **Google MediaPipe** | Detecção de objetos otimizada para dispositivos móveis e web. |
+
+---
+
+## 🛠️ Tecnologias & Bibliotecas
+
+O projeto utiliza um stack moderno focado em performance e facilidade de desenvolvimento:
+
+*   **Google Generative AI SDK**: Integração com Gemini Pro/Flash.
+*   **Hugging Face Transformers**: Modelos state-of-the-art portados para fácil uso.
+*   **MediaPipe**: Framework do Google para ML em dispositivos.
+*   **PyTorch**: O "motor" por trás da maioria dos modelos de visão.
+*   **Pydantic**: Validando e estruturando as respostas da IA.
+*   **Timm**: Biblioteca premium de modelos de visão pré-treinados.
+*   **OpenCV**: Manipulação de imagem e vídeo em tempo real.
+
+---
+
+## 🚀 Como Começar (Quick Start)
+
+### 1. Preparação do Terreno
+Este projeto utiliza o **`uv`**, o gerenciador de pacotes Python mais rápido do mercado.
+
 ```bash
+# Instale o uv se ainda não tiver
+pip install uv
+
+# Clone o repositório
 git clone https://github.com/Luisfsiq/nlwoperator.git
 cd nlwoperator
 ```
 
-### 3. Configurando o Ambiente (Windows, macOS e Linux)
+### 2. Configurando o Ambiente
+Crie e ative seu ambiente virtual com apenas um comando:
 
-Recomendamos o uso do `uv` para criar o ambiente virtual:
-
-**Para Windows (PowerShell):**
-```powershell
-pip install uv
-uv venv
-.venv\Scripts\activate
-uv pip install -r pyproject.toml
-```
-
-**Para macOS / Linux:**
 ```bash
-pip install uv
 uv venv
+# No Windows (PowerShell):
+.venv\Scripts\activate
+# No Linux/macOS:
 source .venv/bin/activate
+
+# Instale as dependências
 uv pip install -r pyproject.toml
 ```
 
-### 4. Variáveis de Ambiente
-Crie um arquivo chamado `.env` na raiz do projeto e adicione sua chave do Gemini:
+### 3. Configuração de API
+Crie um arquivo `.env` na raiz do projeto:
 ```env
-VITE_GOOGLE_API_KEY=SUA_CHAVE_AQUI
+GOOGLE_API_KEY=SUA_CHAVE_AQUI
 ```
+> [!TIP]
+> Você pode obter sua chave gratuita no [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📂 Estrutura de Pastas
 
-*   **Google Generative AI SDK**: Para integração com o Gemini.
-*   **PyTorch**: Framework base para os modelos de Deep Learning.
-*   **Timm (PyTorch Image Models)**: Para modelos de classificação otimizados.
-*   **Hugging Face Transformers**: Para modelos YOLOS e ClipSeg.
-*   **Pydantic**: Para garantir que as respostas da IA sejam estruturadas corretamente.
-*   **Matplotlib/PIL**: Para visualizações ricas de gráficos e segmentações.
-
----
-
-## 🚀 Como Executar
-1.  Coloque as imagens que deseja analisar dentro da pasta `images/`.
-2.  Abra o VS Code.
-3.  Selecione cada notebook `.ipynb`.
-4.  Certifique-se de selecionar o Kernel do ambiente virtual criado (`.venv`).
-5.  Execute as células!
+*   `images/`: Local para colocar suas fotos de teste.
+*   `*.ipynb`: Notebooks interativos para experimentação.
+*   `pyproject.toml`: Definição de dependências e metadados do projeto.
+*   `.env`: Configurações sensíveis (não commitada se estiver no .gitignore).
 
 ---
 
 ## 👤 Autor
-Desenvolvido durante a trilha NLW Operator.
-GitHub: [@Luisfsiq](https://github.com/Luisfsiq)
+
+Desenvolvido com foco em aprendizado prático durante o evento **NLW Operator**.
+
+*   **GitHub**: [@Luisfsiq](https://github.com/Luisfsiq)
+*   **Repositório**: [nlwoperator](https://github.com/Luisfsiq/nlwoperator)
+
+---
+<p align="center">
+  Feito com 💙 por Luisfsiq
+</p>
